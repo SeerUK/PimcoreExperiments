@@ -1,0 +1,2 @@
+# PimcoreExperiments
+Various Pimcore experiments.
