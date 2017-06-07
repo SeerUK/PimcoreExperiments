@@ -1,0 +1,41 @@
+version: "3"
+
+services:
+  web:
+    image: seeruk/docker-nginx:latest
+    environment:
+      NGINX_TEMPLATE: default-php-pimcore-composer
+    #set your ports in docker-compose.override.yml
+    #ports:
+    #- 80:8080
+    #- 443:4430
+    volumes:
+    - .:/opt/www
+    links:
+    - php:php.docker
+
+  php:
+    image: seeruk/php-fpm:5.6-dev
+    volumes:
+    - .:/opt/www
+    links:
+    - cache:cache.docker
+    - db:db.docker
+
+  db:
+    image: mysql:5.6
+    command: --character-set-server=utf8 --collation-server=utf8_general_ci
+    environment:
+      MYSQL_ROOT_PASSWORD: pimcore
+      MYSQL_DATABASE: pimcore
+      MYSQL_USER: pimcore
+      MYSQL_PASSWORD: pimcore
+    volumes:
+    - dbdata:/var/lib/mysql
+
+  cache:
+    image: redis:latest
+
+volumes:
+  dbdata:
+    driver: local

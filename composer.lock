@@ -1,0 +1,134 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "f2af2885689a300f9b514db72aa035c7",
+    "packages": [
+        {
+            "name": "byng/pimcore-composer-installer",
+            "version": "3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/byng-systems/pimcore-composer-installer.git",
+                "reference": "5c0aba4dea0063e80c557b6e06ad79c963769637"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/byng-systems/pimcore-composer-installer/zipball/5c0aba4dea0063e80c557b6e06ad79c963769637",
+                "reference": "5c0aba4dea0063e80c557b6e06ad79c963769637",
+                "shasum": ""
+            },
+            "type": "library",
+            "extra": {
+                "class": "Byng\\Pimcore\\Composer\\Installer"
+            },
+            "autoload": {
+                "psr-4": {
+                    "Byng\\Pimcore\\Composer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Elliot Wright",
+                    "email": "elliot@elliotwright.co"
+                }
+            ],
+            "time": "2016-05-06T08:30:08+00:00"
+        },
+        {
+            "name": "byng/pimcore-sitemap-plugin",
+            "version": "v0.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/byng-systems/pimcore-sitemap-plugin.git",
+                "reference": "c5ef74a89a95a694128371f79d501243f3d6cd5e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/byng-systems/pimcore-sitemap-plugin/zipball/c5ef74a89a95a694128371f79d501243f3d6cd5e",
+                "reference": "c5ef74a89a95a694128371f79d501243f3d6cd5e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5",
+                "pimcore/installer-plugin": ">=1"
+            },
+            "type": "pimcore-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ioannis Giakoumidis",
+                    "email": "ioannis@byng.co"
+                }
+            ],
+            "homepage": "https://github.com/byng-systems/pimcore-sitemap-plugin",
+            "keywords": [
+                "Sitemap",
+                "pimcore",
+                "plugin"
+            ],
+            "time": "2016-06-14T12:40:10+00:00"
+        },
+        {
+            "name": "pimcore/installer-plugin",
+            "version": "1.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pimcore/composer-installer-plugin.git",
+                "reference": "cb5e7f376fe70f07505703ee1458fdd5293e077a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pimcore/composer-installer-plugin/zipball/cb5e7f376fe70f07505703ee1458fdd5293e077a",
+                "reference": "cb5e7f376fe70f07505703ee1458fdd5293e077a",
+                "shasum": ""
+            },
+            "type": "composer-installer",
+            "extra": {
+                "class": "Pimcore\\Composer\\PluginInstaller"
+            },
+            "autoload": {
+                "psr-0": {
+                    "Pimcore\\Composer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "pimcore Team",
+                    "email": "info@pimcore.com",
+                    "homepage": "http://www.pimcore.org/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A custom composer installer for pimcore - plugins",
+            "homepage": "http://www.pimcore.org/",
+            "keywords": [
+                "installer",
+                "pimcore",
+                "plugin"
+            ],
+            "time": "2016-02-16T10:25:28+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

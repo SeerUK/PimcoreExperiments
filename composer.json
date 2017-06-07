@@ -1,0 +1,32 @@
+{
+    "name": "seeruk/pimcore-experiments",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Elliot Wright",
+            "email": "hello@elliotdwright.com"
+        }
+    ],
+    "autoload": {
+         "psr-4": {
+             "PimEx\\": "web/website/lib/PimEx/"
+         }
+     },
+    "config": {
+        "document-root-path": "./web",
+        "pimcore-version": "3.1.1"
+    },
+    "require": {
+        "byng/pimcore-composer-installer": "^3.0",
+        "byng/pimcore-sitemap-plugin": "^0.2.1"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "Byng\\Pimcore\\Composer\\Installer::install"
+        ],
+        "post-update-cmd": [
+            "Byng\\Pimcore\\Composer\\Installer::install"
+        ]
+    }
+}
